@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="12dp"
+    android:background="@drawable/anunt_style"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:radius="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titlu Anunt"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvTimpRamas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timp ramas hh:mm:dd"
+        android:textAlignment="center"
+        android:textColor="#767171" />
+
+    <TextView
+        android:id="@+id/tvPretActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pret: 0 RON"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>

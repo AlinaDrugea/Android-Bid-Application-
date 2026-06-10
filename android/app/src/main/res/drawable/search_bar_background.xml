@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Culoarea de fundal a barei -->
+    <solid android:color="#2C2C2E" />
+
+    <!-- Bordura: grosimea (width) și culoarea (color) -->
+    <stroke
+        android:width="2dp"
+        android:color="#b4b4b4" />
+
+    <!-- Rotunjirea colțurilor: modifică valoarea pentru un aspect mai rotund -->
+    <corners android:radius="17dp" />
+</shape>
