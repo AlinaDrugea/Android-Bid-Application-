@@ -1,72 +1,70 @@
-📱 Native Android Bidding Application
-Native Android Bidding Application is an online auction and real-time bidding platform developed for Android devices. The project combines a native mobile frontend with a backend architecture (Spring Boot and PostgreSQL) to support user authentication, live item listings, and dynamic bidding functionality.
+# 📱 Native Android Bidding Application
 
-✨ Features
-User Authentication: Secure registration and login system with user profiles.
+An online auction and real-time bidding platform for Android devices. The project combines a native mobile frontend with a backend built on Spring Boot and PostgreSQL, supporting user authentication, live item listings, and dynamic bidding.
 
-Auction Feed: Browse active items available for bidding with details, starting prices, and images.
+## ✨ Features
 
-Real-time Bidding: Place bids dynamically and track the current highest bid on items.
+- **User Authentication:** Secure registration and login with user profiles.
+- **Auction Feed:** Browse active items with details, starting prices, and images.
+- **Real-time Bidding:** Place bids and track the current highest bid on each item.
+- **Create Auctions:** List new items for auction directly from the mobile app.
+- **Activity Dashboard:** Monitor your listings, active bids, and won auctions.
 
-Create Auctions: List new items for auction directly through the mobile interface.
+## 🛠️ Tech Stack
 
-Activity Dashboard: Monitor personal listings, active bids, and won auctions.
+| Layer | Technology |
+|---|---|
+| Platform | Android (native) |
+| Language | <Java / Kotlin> |
+| Backend | Spring Boot, REST APIs |
+| Database | PostgreSQL |
+| Tools | Android Studio, Gradle (Kotlin DSL) |
 
-🛠️ Tech Stack
-Platform: Android (Native)
+## 📂 Project Structure
 
-Language: Java / Kotlin
-
-Backend & Database: Spring Boot, REST APIs, PostgreSQL / SQLite
-
-Development Tools: Android Studio, Gradle
-
-📂 Project Structure
-Plaintext
+```
 Native-Android-Bidding-Application/
-│
-├── app/                  # Main Android application module
-│   ├── src/main/java     # Activities, fragments, adapters, and models
-│   ├── src/main/res      # Layouts (XML), drawables, values, and navigation graphs
-│   └── build.gradle      # App-level build configurations
-│
-├── gradle/               # Gradle wrapper files
-├── build.gradle          # Project-level build configurations
-└── settings.gradle       # Project settings
-⚙️ Getting Started
-Prerequisites
-Android Studio (Koala, Iguana, or latest recommended version)
+├── app/                    # Main Android application module
+│   ├── src/main/java       # Activities, fragments, adapters, and models
+│   ├── src/main/res        # Layouts (XML), drawables, values, navigation graphs
+│   └── build.gradle.kts    # App-level build configuration
+├── gradle/                 # Gradle wrapper files
+├── build.gradle.kts        # Project-level build configuration
+├── settings.gradle.kts     # Project settings
+├── gradle.properties
+└── gradlew / gradlew.bat
+```
 
-Android SDK (API level 24 or higher)
+## ⚙️ Getting Started
 
-JDK 17 or compatible version
+### Prerequisites
 
-Installation & Setup
-Clone the repository:
+- Android Studio (latest stable version recommended)
+- Android SDK, API level 24 or higher
+- JDK 17 or compatible
+- A running instance of the backend <link to the backend repo or setup instructions>
 
-Bash
-git clone https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git
-Open the project:
+### Installation
 
-Launch Android Studio and select Open an Existing Project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git
+   ```
+2. Open the project in Android Studio (**File → Open**) and select the cloned folder.
+3. Let Gradle sync and download the dependencies.
+4. Set the backend URL: <e.g. `BASE_URL` in `<file>`; use `http://10.0.2.2:8080` for the emulator>.
+5. Connect a physical device with USB debugging enabled, or start an emulator (AVD), then click **Run ▶**.
 
-Navigate to the cloned folder and select it.
+## 💡 Usage
 
-Sync Gradle:
+1. Launch the app and register a new account, or log in.
+2. Browse the home screen to see active auctions.
+3. Tap an item to view its details and place a higher bid.
+4. Open the menu to list a new item or review your bidding history.
 
-Allow Android Studio to download dependencies and sync the project files.
 
-Run the application:
 
-Connect a physical Android device with USB Debugging enabled or start an Android Virtual Device (AVD / Emulator).
 
-Click the Run (' ▶ ') button in Android Studio.
+## 📄 License
 
-💡 Usage
-Launch the app and Register a new account or log in with your credentials.
-
-Explore the home screen to view active items up for auction.
-
-Tap on an item to check details and submit a higher bid.
-
-Access the menu to list a new item or review your bidding history.
+<Add a license or remove this section>
