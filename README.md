@@ -1,3 +1,4 @@
+Markdown
 # 🛒 Native Android Bidding Application
 
 <p align="center">
@@ -48,3 +49,31 @@ A feature-rich, native Android application designed for real-time online auction
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git](https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git)
+Open in Android Studio:
+
+Launch Android Studio.
+
+Select Open and choose the cloned project folder.
+
+Configure API Endpoint:
+
+Locate the network configuration or API constants file in the project (e.g., ApiClient.java or ApiService.java).
+
+Update the base URL to point to your running backend server (e.g., http://10.0.2.2:8080/ for local development on an emulator).
+
+Build and Run:
+
+Sync project with Gradle files (File > Sync Project with Gradle Files).
+
+Click Run 'app'` (Shift + F10) to launch the app on your emulator or connected device.
+
+📂 Project Structure
+Plaintext
+app/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/biddingapp/  # Source code (Activities, Adapters, Models, API Client)
+│   │   ├── res/                          # Layouts, drawables, values, and manifests
+│   │   └── AndroidManifest.xml           # App configuration and permissions
+│   └── build.gradle                      # App-level build configurations
+└── build.gradle                          # Project-level build configurations
