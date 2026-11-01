@@ -1,67 +1,72 @@
-🛒 Native Android Bidding Application
-A feature-rich, native Android application designed for real-time online auctions and bidding. Built with Java and Android Studio, this mobile client connects seamlessly with a secure backend REST API to allow users to list items, place bids, manage auctions, and track real-time bidding updates.
+📱 Native Android Bidding Application
+Native Android Bidding Application is an online auction and real-time bidding platform developed for Android devices. The project combines a native mobile frontend with a backend architecture (Spring Boot and PostgreSQL) to support user authentication, live item listings, and dynamic bidding functionality.
 
 ✨ Features
-User Authentication & Profiles: Secure registration, login, and user profile management.
+User Authentication: Secure registration and login system with user profiles.
 
-Product Listing & Management: Users can post items for auction with descriptions, starting prices, and images.
+Auction Feed: Browse active items available for bidding with details, starting prices, and images.
 
-Live Bidding System: Place real-time bids on active items with instant validation and status updates.
+Real-time Bidding: Place bids dynamically and track the current highest bid on items.
 
-Search & Filter: Easily browse products by categories, status (active/closed), or keywords.
+Create Auctions: List new items for auction directly through the mobile interface.
 
-RESTful API Integration: Communicates with a robust backend service using HTTP requests.
+Activity Dashboard: Monitor personal listings, active bids, and won auctions.
 
 🛠️ Tech Stack
-Mobile Frontend (Client)
-Language: Java
+Platform: Android (Native)
 
-IDE: Android Studio
+Language: Java / Kotlin
 
-Architecture & Networking: REST APIs, JSON parsing, asynchronous background tasks
+Backend & Database: Spring Boot, REST APIs, PostgreSQL / SQLite
 
-Backend & Database (Server)
-Framework: Spring Boot (Java)
-
-Database: PostgreSQL
-
-Communication: RESTful web services
-
-🚀 Getting Started
-Prerequisites
-Android Studio (Koala or newer recommended)
-
-JDK 17 or higher
-
-An Android Emulator or a physical Android device (min SDK 24+).
-
-Installation & Setup
-Clone the repository:git clone [https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git](https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git)
-
-Open in Android Studio:
-
-Launch Android Studio.
-
-Select Open and choose the cloned project folder.
-
-Configure API Endpoint:
-
-Locate the network configuration or API constants file in the project (de exemplu, ApiClient.java sau ApiService.java).
-
-Update the base URL to point to your running backend server (e.g., [http://10.0.2.2:8080/](http://10.0.2.2:8080/) for local development on an emulator).
-
-Build and Run:
-
-Sync project with Gradle files (File > Sync Project with Gradle Files).
-
-Click Run 'app' (Shift + F10) to launch the app on your emulator or connected device.
+Development Tools: Android Studio, Gradle
 
 📂 Project Structure
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/biddingapp/  # Source code (Activities, Adapters, Models, API Client)
-│   │   ├── res/                          # Layouts, drawables, values, and manifests
-│   │   └── AndroidManifest.xml           # App configuration and permissions
-│   └── build.gradle                      # App-level build configurations
-└── build.gradle                          # Project-level build configurations
+Plaintext
+Native-Android-Bidding-Application/
+│
+├── app/                  # Main Android application module
+│   ├── src/main/java     # Activities, fragments, adapters, and models
+│   ├── src/main/res      # Layouts (XML), drawables, values, and navigation graphs
+│   └── build.gradle      # App-level build configurations
+│
+├── gradle/               # Gradle wrapper files
+├── build.gradle          # Project-level build configurations
+└── settings.gradle       # Project settings
+⚙️ Getting Started
+Prerequisites
+Android Studio (Koala, Iguana, or latest recommended version)
+
+Android SDK (API level 24 or higher)
+
+JDK 17 or compatible version
+
+Installation & Setup
+Clone the repository:
+
+Bash
+git clone https://github.com/LiviuGhilinta/Native-Android-Bidding-Application.git
+Open the project:
+
+Launch Android Studio and select Open an Existing Project.
+
+Navigate to the cloned folder and select it.
+
+Sync Gradle:
+
+Allow Android Studio to download dependencies and sync the project files.
+
+Run the application:
+
+Connect a physical Android device with USB Debugging enabled or start an Android Virtual Device (AVD / Emulator).
+
+Click the Run (' ▶ ') button in Android Studio.
+
+💡 Usage
+Launch the app and Register a new account or log in with your credentials.
+
+Explore the home screen to view active items up for auction.
+
+Tap on an item to check details and submit a higher bid.
+
+Access the menu to list a new item or review your bidding history.
