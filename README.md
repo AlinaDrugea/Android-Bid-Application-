@@ -68,7 +68,7 @@ Sync project with Gradle files (File > Sync Project with Gradle Files).
 Click Run 'app'` (Shift + F10) to launch the app on your emulator or connected device.
 
 📂 Project Structure
-Plaintext
+
 app/
 ├── src/
 │   ├── main/
